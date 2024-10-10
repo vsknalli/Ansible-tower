@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1728540037,,"wq!"
+|2,0,1728542832,,"wq!"
 :q!
 |2,0,1728539857,,"q!"
 :.
@@ -27,9 +27,9 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	- service: "name=httpd  state=started"
-|3,1,1,1,1,0,1728539468,"- service: \"name=httpd  state=started\""
+|3,0,1,1,1,0,1728539468,"- service: \"name=httpd  state=started\""
 "2	LINE	0
 	- copy: "src=senthil.html dest=/var/www/html"
 |3,0,2,1,1,0,1728539466,"- copy: \"src=senthil.html dest=/var/www/html\""
@@ -54,39 +54,81 @@
 "9	LINE	0
 	
 |3,0,9,1,1,0,1728529373,""
-"-	CHAR	0
-	:
-|3,0,36,0,1,0,1728539716,":"
+""-	CHAR	0
+	t
+|3,1,36,0,1,0,1728542720,"t"
 
 # File marks:
-'0  61  11  ~/lesstion01-notes-v2
-|4,48,61,11,1728540037,"~/lesstion01-notes-v2"
-'1  10  4  ~/first.yaml
-|4,49,10,4,1728539857,"~/first.yaml"
-'2  10  4  ~/first.yaml
-|4,50,10,4,1728539853,"~/first.yaml"
-'3  10  4  ~/first.yaml
-|4,51,10,4,1728539719,"~/first.yaml"
+'0  1  33  ~/senthil.html
+|4,48,1,33,1728542832,"~/senthil.html"
+'1  10  36  ~/first.yaml
+|4,49,10,36,1728542724,"~/first.yaml"
+'2  1  42  ~/senthil.html
+|4,50,1,42,1728542642,"~/senthil.html"
+'3  61  11  ~/lesstion01-notes-v2
+|4,51,61,11,1728540037,"~/lesstion01-notes-v2"
 '4  10  4  ~/first.yaml
-|4,52,10,4,1728539719,"~/first.yaml"
-'5  11  0  ~/first.yaml
-|4,53,11,0,1728539623,"~/first.yaml"
-'6  11  0  ~/first.yaml
-|4,54,11,0,1728539623,"~/first.yaml"
-'7  11  0  ~/first.yaml
-|4,55,11,0,1728539623,"~/first.yaml"
-'8  11  0  ~/first.yaml
-|4,56,11,0,1728539623,"~/first.yaml"
-'9  11  0  ~/first.yaml
-|4,57,11,0,1728539623,"~/first.yaml"
+|4,52,10,4,1728539857,"~/first.yaml"
+'5  10  4  ~/first.yaml
+|4,53,10,4,1728539853,"~/first.yaml"
+'6  10  4  ~/first.yaml
+|4,54,10,4,1728539853,"~/first.yaml"
+'7  10  4  ~/first.yaml
+|4,55,10,4,1728539719,"~/first.yaml"
+'8  10  4  ~/first.yaml
+|4,56,10,4,1728539719,"~/first.yaml"
+'9  10  4  ~/first.yaml
+|4,57,10,4,1728539719,"~/first.yaml"
 
 # Jumplist (newest first):
+-'  1  33  ~/senthil.html
+|4,39,1,33,1728542832,"~/senthil.html"
+-'  10  36  ~/first.yaml
+|4,39,10,36,1728542724,"~/first.yaml"
+-'  10  36  ~/first.yaml
+|4,39,10,36,1728542724,"~/first.yaml"
+-'  1  42  ~/senthil.html
+|4,39,1,42,1728542642,"~/senthil.html"
+-'  1  42  ~/senthil.html
+|4,39,1,42,1728542642,"~/senthil.html"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
+-'  61  11  ~/lesstion01-notes-v2
+|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
 -'  61  11  ~/lesstion01-notes-v2
 |4,39,61,11,1728540037,"~/lesstion01-notes-v2"
 -'  10  4  ~/first.yaml
 |4,39,10,4,1728539857,"~/first.yaml"
 -'  10  4  ~/first.yaml
+|4,39,10,4,1728539857,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539857,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539857,"~/first.yaml"
+-'  10  4  ~/first.yaml
 |4,39,10,4,1728539853,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539853,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539853,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539853,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539719,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539719,"~/first.yaml"
+-'  10  4  ~/first.yaml
+|4,39,10,4,1728539719,"~/first.yaml"
 -'  10  4  ~/first.yaml
 |4,39,10,4,1728539719,"~/first.yaml"
 -'  11  0  ~/first.yaml
@@ -95,6 +137,34 @@
 |4,39,11,0,1728539659,"~/first.yaml"
 -'  11  0  ~/first.yaml
 |4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539659,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539623,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539623,"~/first.yaml"
+-'  11  0  ~/first.yaml
+|4,39,11,0,1728539623,"~/first.yaml"
 -'  11  0  ~/first.yaml
 |4,39,11,0,1728539623,"~/first.yaml"
 -'  1  0  ~/first.yaml
@@ -105,6 +175,48 @@
 |4,39,1,0,1728539617,"~/first.yaml"
 -'  1  0  ~/first.yaml
 |4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/first.yaml
+|4,39,1,0,1728539617,"~/first.yaml"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
+-'  1  0  ~/lesstion01-notes-v2
+|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
 -'  1  0  ~/lesstion01-notes-v2
 |4,39,1,0,1728529288,"~/lesstion01-notes-v2"
 -'  18  0  ~/lesstion01-notes-v2
@@ -139,150 +251,64 @@
 |4,39,18,0,1728529228,"~/lesstion01-notes-v2"
 -'  18  0  ~/lesstion01-notes-v2
 |4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529191,"~/lesstion01-notes-v2"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  35  0  ~/lesstion01-notes-v1
-|4,39,35,0,1728529168,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
--'  1  0  ~/lesstion01-notes-v1
-|4,39,1,0,1728526681,"~/lesstion01-notes-v1"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  18  0  ~/lesstion01-notes-v2
+|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
 
 # History of marks within files (newest to oldest):
+
+> ~/senthil.html
+	*	1728542831	0
+	"	1	33
+	^	1	34
+	.	1	33
+	+	1	33
+
+> ~/first.yaml
+	*	1728542723	0
+	"	10	36
+	^	10	37
+	.	10	36
+	+	10	35
+	+	1	1
+	+	2	1
+	+	3	1
+	+	4	1
+	+	5	1
+	+	8	1
+	+	9	1
+	+	10	3
+	+	3	3
+	+	4	3
+	+	5	3
+	+	10	36
 
 > ~/lesstion01-notes-v2
 	*	1728540035	0
@@ -329,25 +355,6 @@
 	+	71	0
 	+	68	18
 	+	61	11
-
-> ~/first.yaml
-	*	1728539855	0
-	"	10	4
-	^	10	7
-	.	10	4
-	+	10	35
-	+	1	1
-	+	2	1
-	+	3	1
-	+	4	1
-	+	5	1
-	+	8	1
-	+	9	1
-	+	10	3
-	+	3	3
-	+	4	3
-	+	5	3
-	+	10	4
 
 > ~/lesstion01-notes-v1
 	*	1728529167	0

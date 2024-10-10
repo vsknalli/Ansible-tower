@@ -7,5 +7,5 @@
 
 - hosts: node1, node2
   tasks:
-    - package: "name=vlc state=present"
+    - package: "name=vlc state=absent"
 
