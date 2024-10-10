@@ -1,5 +1,5 @@
 - name: Installing web applicaitons
-  hosts: node1 
+  hosts: server1
   tasks:
    - package: "name=httpd state=present"
    - copy: "src=saba.yaml dest=/var/www/html"
@@ -7,7 +7,7 @@
 
 
 - name: Installing web applicaitons
-  hosts: node1, node2
+  hosts: server1, server2 
   tasks:
    - package: "name=telnet state=present"
 
