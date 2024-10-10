@@ -12,7 +12,9 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1728542832,,"wq!"
+|2,0,1728549974,,"wq!"
+:set nu
+|2,0,1728549133,,"set nu"
 :q!
 |2,0,1728539857,,"q!"
 :.
@@ -28,261 +30,355 @@
 
 # Registers:
 "1	LINE	0
-	- service: "name=httpd  state=started"
-|3,0,1,1,1,0,1728539468,"- service: \"name=httpd  state=started\""
+	   - copy: "src=saba.yaml dest=/var/www/html"
+|3,0,1,1,1,0,1728549790,"   - copy: \"src=saba.yaml dest=/var/www/html\""
 "2	LINE	0
-	- copy: "src=senthil.html dest=/var/www/html"
-|3,0,2,1,1,0,1728539466,"- copy: \"src=senthil.html dest=/var/www/html\""
+	   - service: "name=httpd state=started"
+|3,0,2,1,1,0,1728549788,"   - service: \"name=httpd state=started\""
 "3	LINE	0
-	==================================================================================================================
-|3,0,3,1,1,0,1728529376,"=================================================================================================================="
+	
+|3,0,3,1,1,0,1728549426,""
 "4	LINE	0
-	# ansible node1 -m service -a "name=httpd  state=started"
-|3,0,4,1,1,0,1728529375,"# ansible node1 -m service -a \"name=httpd  state=started\""
+	- tasks:
+|3,0,4,1,1,0,1728549425,"- tasks:"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1728529374,""
+|3,0,5,1,1,0,1728549424,""
 "6	LINE	0
-	service --> httpd 
-|3,0,6,1,1,0,1728529374,"service --> httpd "
+	   - package: "name=telnet state=present"
+|3,0,6,1,1,0,1728549424,"   - package: \"name=telnet state=present\""
 "7	LINE	0
-	Excute the serevices  --> Ansible please excute the services 
-|3,0,7,1,1,0,1728529374,"Excute the serevices  --> Ansible please excute the services "
+	   - service: "name=httpd state=started"
+|3,0,7,1,1,0,1728549369,"   - service: \"name=httpd state=started\""
 "8	LINE	0
-	Step3 
-|3,0,8,1,1,0,1728529373,"Step3 "
+	   - copy: "src=saba.yaml dest=/var/www/html"
+|3,0,8,1,1,0,1728549368,"   - copy: \"src=saba.yaml dest=/var/www/html\""
 "9	LINE	0
-	
-|3,0,9,1,1,0,1728529373,""
+	`
+|3,0,9,1,1,0,1728548955,"`"
 ""-	CHAR	0
-	t
-|3,1,36,0,1,0,1728542720,"t"
+	d
+|3,1,36,0,1,0,1728549796,"d"
 
 # File marks:
-'0  1  33  ~/senthil.html
-|4,48,1,33,1728542832,"~/senthil.html"
-'1  10  36  ~/first.yaml
-|4,49,10,36,1728542724,"~/first.yaml"
-'2  1  42  ~/senthil.html
-|4,50,1,42,1728542642,"~/senthil.html"
-'3  61  11  ~/lesstion01-notes-v2
-|4,51,61,11,1728540037,"~/lesstion01-notes-v2"
-'4  10  4  ~/first.yaml
-|4,52,10,4,1728539857,"~/first.yaml"
-'5  10  4  ~/first.yaml
-|4,53,10,4,1728539853,"~/first.yaml"
-'6  10  4  ~/first.yaml
-|4,54,10,4,1728539853,"~/first.yaml"
-'7  10  4  ~/first.yaml
-|4,55,10,4,1728539719,"~/first.yaml"
-'8  10  4  ~/first.yaml
-|4,56,10,4,1728539719,"~/first.yaml"
-'9  10  4  ~/first.yaml
-|4,57,10,4,1728539719,"~/first.yaml"
+'0  2  13  ~/saba-paly.yaml
+|4,48,2,13,1728549974,"~/saba-paly.yaml"
+'1  10  20  ~/saba-paly.yaml
+|4,49,10,20,1728549862,"~/saba-paly.yaml"
+'2  10  20  ~/saba-paly.yaml
+|4,50,10,20,1728549862,"~/saba-paly.yaml"
+'3  10  20  ~/saba-paly.yaml
+|4,51,10,20,1728549826,"~/saba-paly.yaml"
+'4  10  20  ~/saba-paly.yaml
+|4,52,10,20,1728549826,"~/saba-paly.yaml"
+'5  6  3  ~/saba-paly.yaml
+|4,53,6,3,1728549738,"~/saba-paly.yaml"
+'6  6  3  ~/saba-paly.yaml
+|4,54,6,3,1728549738,"~/saba-paly.yaml"
+'7  6  3  ~/saba-paly.yaml
+|4,55,6,3,1728549738,"~/saba-paly.yaml"
+'8  6  3  ~/saba-paly.yaml
+|4,56,6,3,1728549738,"~/saba-paly.yaml"
+'9  6  3  ~/saba-paly.yaml
+|4,57,6,3,1728549738,"~/saba-paly.yaml"
 
 # Jumplist (newest first):
--'  1  33  ~/senthil.html
-|4,39,1,33,1728542832,"~/senthil.html"
--'  10  36  ~/first.yaml
-|4,39,10,36,1728542724,"~/first.yaml"
--'  10  36  ~/first.yaml
-|4,39,10,36,1728542724,"~/first.yaml"
--'  1  42  ~/senthil.html
-|4,39,1,42,1728542642,"~/senthil.html"
--'  1  42  ~/senthil.html
-|4,39,1,42,1728542642,"~/senthil.html"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  61  11  ~/lesstion01-notes-v2
-|4,39,61,11,1728540037,"~/lesstion01-notes-v2"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539857,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539857,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539857,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539857,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539853,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539853,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539853,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539853,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539719,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539719,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539719,"~/first.yaml"
--'  10  4  ~/first.yaml
-|4,39,10,4,1728539719,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539659,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539623,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539623,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539623,"~/first.yaml"
--'  11  0  ~/first.yaml
-|4,39,11,0,1728539623,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/first.yaml
-|4,39,1,0,1728539617,"~/first.yaml"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  1  0  ~/lesstion01-notes-v2
-|4,39,1,0,1728529288,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
--'  18  0  ~/lesstion01-notes-v2
-|4,39,18,0,1728529228,"~/lesstion01-notes-v2"
+-'  2  13  ~/saba-paly.yaml
+|4,39,2,13,1728549974,"~/saba-paly.yaml"
+-'  10  20  ~/saba-paly.yaml
+|4,39,10,20,1728549967,"~/saba-paly.yaml"
+-'  10  20  ~/saba-paly.yaml
+|4,39,10,20,1728549862,"~/saba-paly.yaml"
+-'  10  20  ~/saba-paly.yaml
+|4,39,10,20,1728549826,"~/saba-paly.yaml"
+-'  6  3  ~/saba-paly.yaml
+|4,39,6,3,1728549743,"~/saba-paly.yaml"
+-'  6  3  ~/saba-paly.yaml
+|4,39,6,3,1728549743,"~/saba-paly.yaml"
+-'  6  3  ~/saba-paly.yaml
+|4,39,6,3,1728549743,"~/saba-paly.yaml"
+-'  6  3  ~/saba-paly.yaml
+|4,39,6,3,1728549738,"~/saba-paly.yaml"
+-'  3  0  ~/saba-paly.yaml
+|4,39,3,0,1728549624,"~/saba-paly.yaml"
+-'  3  0  ~/saba-paly.yaml
+|4,39,3,0,1728549624,"~/saba-paly.yaml"
+-'  3  0  ~/saba-paly.yaml
+|4,39,3,0,1728549624,"~/saba-paly.yaml"
+-'  3  0  ~/saba-paly.yaml
+|4,39,3,0,1728549624,"~/saba-paly.yaml"
+-'  3  0  ~/saba-paly.yaml
+|4,39,3,0,1728549596,"~/saba-paly.yaml"
+-'  7  0  ~/saba-paly.yaml
+|4,39,7,0,1728549545,"~/saba-paly.yaml"
+-'  7  0  ~/saba-paly.yaml
+|4,39,7,0,1728549545,"~/saba-paly.yaml"
+-'  7  0  ~/saba-paly.yaml
+|4,39,7,0,1728549545,"~/saba-paly.yaml"
+-'  7  0  ~/saba-paly.yaml
+|4,39,7,0,1728549545,"~/saba-paly.yaml"
+-'  7  0  ~/saba-paly.yaml
+|4,39,7,0,1728549545,"~/saba-paly.yaml"
+-'  6  0  ~/saba-paly.yaml
+|4,39,6,0,1728549434,"~/saba-paly.yaml"
+-'  8  25  ~/saba-paly.yaml
+|4,39,8,25,1728549421,"~/saba-paly.yaml"
+-'  8  25  ~/saba-paly.yaml
+|4,39,8,25,1728549421,"~/saba-paly.yaml"
+-'  8  25  ~/saba-paly.yaml
+|4,39,8,25,1728549421,"~/saba-paly.yaml"
+-'  8  25  ~/saba-paly.yaml
+|4,39,8,25,1728549421,"~/saba-paly.yaml"
+-'  8  25  ~/saba-paly.yaml
+|4,39,8,25,1728549421,"~/saba-paly.yaml"
+-'  7  25  ~/saba-paly.yaml
+|4,39,7,25,1728549421,"~/saba-paly.yaml"
+-'  9  25  ~/saba-paly.yaml
+|4,39,9,25,1728549382,"~/saba-paly.yaml"
+-'  9  25  ~/saba-paly.yaml
+|4,39,9,25,1728549382,"~/saba-paly.yaml"
+-'  9  25  ~/saba-paly.yaml
+|4,39,9,25,1728549382,"~/saba-paly.yaml"
+-'  10  25  ~/saba-paly.yaml
+|4,39,10,25,1728549382,"~/saba-paly.yaml"
+-'  9  25  ~/saba-paly.yaml
+|4,39,9,25,1728549382,"~/saba-paly.yaml"
+-'  10  25  ~/saba-paly.yaml
+|4,39,10,25,1728549382,"~/saba-paly.yaml"
+-'  9  25  ~/saba-paly.yaml
+|4,39,9,25,1728549382,"~/saba-paly.yaml"
+-'  4  44  ~/saba-paly.yaml
+|4,39,4,44,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549347,"~/saba-paly.yaml"
+-'  4  44  ~/saba-paly.yaml
+|4,39,4,44,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549347,"~/saba-paly.yaml"
+-'  4  44  ~/saba-paly.yaml
+|4,39,4,44,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549347,"~/saba-paly.yaml"
+-'  6  2  ~/saba-paly.yaml
+|4,39,6,2,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549347,"~/saba-paly.yaml"
+-'  5  2  ~/saba-paly.yaml
+|4,39,5,2,1728549315,"~/saba-paly.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
+-'  5  37  ~/sen.yaml
+|4,39,5,37,1728549197,"~/sen.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/saba-paly.yaml
+	*	1728549973	0
+	"	2	13
+	^	10	21
+	.	2	13
+	+	7	0
+	+	1	0
+	+	4	42
+	+	6	0
+	+	4	42
+	+	1	12
+	+	4	0
+	+	4	42
+	+	4	0
+	+	4	42
+	+	6	0
+	+	4	30
+	+	4	73
+	+	6	10
+	+	4	49
+	+	4	3
+	+	4	47
+	+	6	5
+	+	4	44
+	+	6	0
+	+	4	12
+	+	4	56
+	+	4	37
+	+	4	51
+	+	6	38
+	+	4	28
+	+	4	54
+	+	6	11
+	+	4	50
+	+	4	39
+	+	4	52
+	+	6	39
+	+	1	4
+	+	6	12
+	+	4	51
+	+	4	12
+	+	7	0
+	+	4	0
+	+	4	42
+	+	6	0
+	+	1	6
+	+	4	0
+	+	4	42
+	+	6	0
+	+	3	1
+	+	4	1
+	+	4	44
+	+	6	40
+	+	8	0
+	+	2	0
+	+	3	0
+	+	4	2
+	+	4	45
+	+	6	2
+	+	5	2
+	+	4	1
+	+	13	0
+	+	12	25
+	+	10	20
+	+	2	13
+
+> ~/sen.yaml
+	*	1728549195	0
+	"	5	37
+	^	5	38
+	.	5	37
+	+	5	37
+
+> ~/saba.yaml
+	*	1728547191	0
+	"	2	32
+	^	2	33
+	.	2	32
+	+	2	32
+
+> /etc/ansible/hosts
+	*	1728546558	0
+	"	13	4
+	^	13	5
+	.	13	4
+	+	13	4
+
+> ~/notes
+	*	1728545083	0
+	"	2	15
+	^	2	16
+	.	2	15
+	+	2	15
 
 > ~/senthil.html
 	*	1728542831	0
