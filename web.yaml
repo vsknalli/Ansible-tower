@@ -13,5 +13,5 @@
 
   - name: Restart the httpd service 
     service:
-        name: https
+        name: httpd
         state: started
