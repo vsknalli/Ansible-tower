@@ -28,3 +28,45 @@ of  my variables, we can do like the below, This is called string interpolation.
    - debug:
       msg: "Hi Saba How are you doing today, Today i have yearned {{ x }} take care Bye as of Now" 
 
+
+
+Suppose project needs to change Document Root folder path:
+============================================================
+Instead of the default path /var/www/html i want to use /var/www/linuxworld path 
+
+so in the existing playbook two steps involved
+1) We need to create new document folder 
+2) Change the DocumnetRoot path  in configuration file /var/www/linuxworld
+
+so inthe client side i edited like the below 
+# cd /etc/httpd/conf.d
+
+i  have created one file called linuxworld.conf and  add 
+=====
+[root@server1 ~]# cat /etc/httpd/conf.d/linuxworld.conf 
+DocumentRoot /var/www/linuxworld
+======
+
+- name: Installing web packages
+  hosts: all
+  vars:
+    - webPage: "saba.html"
+    - packageName: "httpd"
+
+  tasks:
+  - name: Installing httpd package
+    package: 
+         name: "{{ packageName }}" 
+         state: present  
+
+  - name: Copying html artifact
+    copy:
+       src: "{{ webPage }}"
+       dest: /var/www/html
+
+  - name: Restart the httpd service 
+    service:
+        name: httpd
+        state: started
+
+
