@@ -1,0 +1,7 @@
+- name: Installing web packages
+  hosts: dev
+  tasks:
+  - name: Installing httpd package
+    package: 
+         name: httpd
+         state: present
