@@ -3,5 +3,9 @@ Ansible Notes:
 
 Credentials -> Inventory -> Projects -> organaization
 
-Integrating all these components are called Template
+Integrating all these components are called Template, all they  called Objects 
+
+we have to map all these Objects together 
+
+Template -> will connect all these Objects together 
  

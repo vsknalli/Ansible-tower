@@ -5,3 +5,13 @@
     package: 
          name: httpd
          state: present
+
+  - name: Copying html artifact
+    copy:
+       src: senthil.html
+       dest: /var/www/html
+
+  - name: Restart the httpd service 
+    service:
+        name: https
+        state: started
