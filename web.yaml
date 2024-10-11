@@ -1,5 +1,5 @@
 - name: Installing web packages
-  hosts: dev
+  hosts: 192.168.56.201
   tasks:
   - name: Installing httpd package
     package: 
