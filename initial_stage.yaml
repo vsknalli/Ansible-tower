@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - package: "name=httpd state=present"
+    - copy: "src=senthil.html dest=/var/wwww/html"
+    - service: "name=httpd state=started"
