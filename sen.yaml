@@ -1,5 +1,5 @@
 - name: Installing web packages
-  hosts:  all 
+  hosts: all
   tasks:
   - name: Installing httpd package
     package: 
