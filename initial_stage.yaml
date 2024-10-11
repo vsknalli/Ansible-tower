@@ -4,7 +4,7 @@
     - copy: "src=senthil.html dest=/var/www/html"
     - service: "name=httpd state=started"
 
-
+- hosts: all 
   tasks:
    - debug:
        msg: "Installation has been complted sucesfully"
