@@ -3,3 +3,8 @@
     - package: "name=httpd state=present"
     - copy: "src=senthil.html dest=/var/wwww/html"
     - service: "name=httpd state=started"
+
+
+  tasks:
+   - debug:
+       msg: "Installation has been complted sucesfully"
