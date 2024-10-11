@@ -1,0 +1,9 @@
+- name: Installing httpd web server
+  hosts: dev
+  become: yes
+  tasks:
+  - name:  Installing httpd package
+    package:
+       name: "http"
+       state: present
+
