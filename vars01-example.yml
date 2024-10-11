@@ -1,0 +1,8 @@
+- name: variable value tacken playbooks
+  hosts: all
+  vars: 
+    - x: 100
+    - y: 200
+  tasks:
+    - debug:
+       var: x 

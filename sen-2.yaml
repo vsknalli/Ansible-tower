@@ -1,0 +1,20 @@
+- name: Installing web packages
+  hosts: all
+  vars:
+    - x: "saba.html"
+  tasks:
+  - name: Installing httpd package
+    package: 
+         name: httpd
+         state: present
+
+  - name: Copying html artifact
+    copy:
+       src: "{{ x }}"
+       dest: /var/www/html
+
+  - name: Restart the httpd service 
+    service:
+        name: httpd
+        state: started
+

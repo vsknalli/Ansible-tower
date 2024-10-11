@@ -1,2 +1,30 @@
 lession-02 Notes
 ================
+
+
+
+
+Variable:
+========
+Normally we can use
+vars:
+   - x: 5
+   - y: 10 
+tasks:
+   vars: x  --> if you define vars keyword it will tacken the value of the vriasble x . This is one method
+vars01-example.yml 
+
+
+Now  we can usee mse keyword to display the  string values , inbetween i want to call and display the value 
+of  my variables, we can do like the below, This is called string interpolation.
+
+
+
+- hosts: all
+  vars:
+   - x: 100
+   - y: 200
+  tasks:
+   - debug:
+      msg: "Hi Saba How are you doing today, Today i have yearned {{ x }} take care Bye as of Now" 
+

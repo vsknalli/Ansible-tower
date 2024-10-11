@@ -1,0 +1,8 @@
+- hosts: all
+  vars:
+   - x: 100
+   - y: 200
+  tasks:
+   - debug:
+      msg: "Hi Saba How are you doing today, Today i have yearned {{ x }} take care Bye as of Now"
+
