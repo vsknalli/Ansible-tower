@@ -1,5 +1,18 @@
-hosts: prod 
-tasks:
-- package: "name=httpd state=present"
-- copy: "src=senthil.html dest=/var/www/html"
-- service: "name=httpd  state=started"
+- name: Installing web packages
+  hosts: 192.168.56.202, 192.168.56.203
+  tasks:
+  - name: Installing httpd package
+    package: 
+         name: httpd
+         state: present
+
+  - name: Copying html artifact
+    copy:
+       src: senthil.html
+       dest: /var/www/html
+
+  - name: Restart the httpd service 
+    service:
+        name: httpd
+        state: started
+
