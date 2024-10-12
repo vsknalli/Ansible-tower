@@ -1,7 +1,6 @@
 - name:  using default inbuild variables
-  hosts: 192.168.56.201 
+  hosts: all
   tasks:
   - name: using  debug module
     debug:
-      var: ansible_default_ipv4
-
+      var: ansible_memfree_mb 
