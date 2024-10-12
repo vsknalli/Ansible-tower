@@ -1,0 +1,13 @@
+- name: Using some condition to instll package
+  hosts: prod 
+  vars:
+    - dosetup: true 
+  tasks:
+  - name: "Installing web package"
+    package:
+       name: "httpd"
+       state: present
+    when: ( ( ansible_os_family == "RedHat" ) or ( ansible_os_family == "Ubuntu" ) ) and  ( ansible_memfree_mb >= 100 ) and dosetup
+
+
+#Here the setup variable is  like a button ON of OFF the block oc code

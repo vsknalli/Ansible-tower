@@ -1,0 +1,8 @@
+- name: Using some condition to instll package
+  hosts: test
+  tasks:
+  - name: "Installing webb package"
+    package:
+       name: "apache2"
+       state: present
+    when: ansible_os_family == "Debian"

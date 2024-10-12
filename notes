@@ -68,6 +68,20 @@ How we can  use this inbuild varaiable  in playbooks  ,
 
 
 
+variables:
+=========
+we can define variables in playbook or we can define in varfiles or we can use  the variable while running the playbook like the below by using --extra-vars options
+
+
+# ansible-playbook condition-06.yaml --extra-vars "dosetup=true"
+
+# ansible-playbook condition-06.yaml --extra-vars '{"dosetup=true"}'
+
+
+
+
+
+
 
 
 

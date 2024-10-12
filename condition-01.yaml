@@ -1,0 +1,6 @@
+- name: Using some condition to instll package
+  hosts: test
+  tasks:
+    - debug:
+        msg: "I am Senthil"
+      when: ansible_os_family == "Ubuntu" 
