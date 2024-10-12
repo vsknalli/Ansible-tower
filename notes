@@ -18,6 +18,7 @@ Now i am telling ansible to the first computer get  all the facts
 
 ansible_architecture
 ansible_all_ipv4_addresses
+ansible_default_ipv4
 ansible_devices
 ansible_distribution
 ansible_distribution_version
@@ -56,6 +57,14 @@ ansible 192.168.56.201 -m setup -a "filter=ansible_memtotal_mb"
 
 ansible 192.168.56.201 -m setup -a "filter=*free*"
 
+How we can  use this inbuild varaiable  in playbooks  , 
+
+- name:  using default inbuild variables
+  hosts: all
+  tasks:
+  - name: using  debug module
+    debug:  
+      var: filter=ansible_distribution
 
 
 
