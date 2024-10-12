@@ -1,5 +1,5 @@
 - name: Installing httpd web server
-  hosts: dev
+  hosts: 192.168.56.201 
   become: yes
   vars:
    - packageName: "httpd"
@@ -8,7 +8,7 @@
   tasks:
   - name:  Installing httpd package
     package:
-       name: "{{ packageNme }}"
+       name: "{{ packageName }}"
        state: present
   - name: Copy the web  artifact files
     copy:
