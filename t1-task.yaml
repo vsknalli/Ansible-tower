@@ -1,6 +1,0 @@
-- name: Controlling tasks
-  hosts: 192.168.56.201
-  tasks:
-    - debug:
-       msg: "I am Senthil Kukmar"
-      when: false          
