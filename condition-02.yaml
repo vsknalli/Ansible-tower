@@ -1,5 +1,5 @@
 - name: Using some condition to instll package
-  hosts: test
+  hosts: all
   tasks:
   - name: "Installing webb package"
     package:

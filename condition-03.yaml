@@ -1,5 +1,5 @@
 - name: Using some condition to instll package
-  hosts: prod 
+  hosts: all 
   tasks:
   - name: "Installing web package"
     package:

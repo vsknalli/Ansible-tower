@@ -7,7 +7,7 @@
     package:
        name: "{{ packageName }}"
        state: present
-    when: ( ansible_os_family == "Debian" )  and  ( ansible_memfree_mb >= 100 ) and dosetup
+    when: ( ansible_os_family == "RedHat" ) and dosetup
 
 
 #Here the setup variable is  like a button ON of OFF the block oc code
