@@ -1,0 +1,13 @@
+- name: Using some condition to instll package
+  hosts: all 
+  vars_files:
+    - my_var.ymal 
+  tasks:
+  - name: "Installing {{ packageName }} ....OK"
+    package:
+       name: "{{ packageName }}"
+       state: present
+    when: ( ansible_os_family == "Debian" )  and  ( ansible_memfree_mb >= 100 ) and dosetup
+
+
+#Here the setup variable is  like a button ON of OFF the block oc code

@@ -1,0 +1,6 @@
+- name: Using some condition to instll package
+  hosts: all 
+  tasks:
+    - debug:
+        msg: "I am SABA I am learning Ansible"
+      when: ansible_os_family == "Debian" 

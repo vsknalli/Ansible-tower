@@ -1,0 +1,6 @@
+- name:  using default inbuild variables
+  hosts: all
+  tasks:
+  - name: using  debug module
+    debug:
+      var: ansible_memfree_mb 

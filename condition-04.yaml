@@ -1,0 +1,8 @@
+- name: Using some condition to instll package
+  hosts: prod 
+  tasks:
+  - name: "Installing web package"
+    package:
+       name: "httpd"
+       state: present
+    when: ( ( ansible_os_family == "RedHat" ) or ( ansible_os_family == "Ubuntu" ) ) and  ( ansible_memfree_mb >= 100 ) 
