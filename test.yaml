@@ -1,0 +1,33 @@
+- name: Installing web packages
+  hosts: all
+  vars:
+    - webPage: "saba.html"
+    - packageName: "httpd"
+    - documentDir: /var/www/linuxworld
+
+  tasks:
+  - name: Installing httpd package
+    package: 
+         name: "{{ packageName }}" 
+         state: present
+
+  - name: Create  documentDir
+    file:
+      state: directory
+      path: "{{ documentDir }}"
+
+  - name: Copy the documentRoot path  
+    copy:
+      dest: "/etc/httpd/conf.d/senthil.conf"
+      content: "documentroot /var/www/linuxworld" 
+
+  - name: Copying html artifact
+    copy:
+       src: "{{ webPage }}"
+       dest: "{{ documentDir }}"
+
+  - name: Restart the httpd service 
+    service:
+        name: httpd
+        state: started
+

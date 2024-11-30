@@ -1,0 +1,13 @@
+- name: Installing web applicaitons
+  hosts: server1
+  tasks:
+   - package: "name=httpd state=present"
+   - copy: "src=saba.yaml dest=/var/www/html"
+   - service: "name=httpd state=started"
+
+
+- name: Installing web applicaitons
+  hosts: server1, server2 
+  tasks:
+   - package: "name=telnet state=present"
+
