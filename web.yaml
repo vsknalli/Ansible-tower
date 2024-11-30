@@ -1,0 +1,20 @@
+- name: Installing httpd web server
+  hosts: 192.168.56.201 
+  become: yes
+  vars:
+   - packageName: "httpd"
+   - documentDir: "/var/www/linuxworld"
+   - serviceName: "httpd"
+  tasks:
+  - name:  Installing httpd package
+    package:
+       name: "{{ packageName }}"
+       state: present
+  - name: Copy the web  artifact files
+    copy:
+      src: "saba.html"
+      dest: "{{ documentDir }}"
+
+  - name: Restart httpd service
+    service:
+      name: "{{ serviceName }}"
