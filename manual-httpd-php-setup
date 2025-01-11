@@ -1,0 +1,45 @@
+ 
+
+1) we need to install httpd software  ###   90-88 server 
+# yum install httpd -y 
+
+2) My plan is to put pht website so i am going to install php software 
+# yum install php -y 
+
+3) cd /var/www/html 
+vi index.php 
+
+<?php
+print "Hi"
+?>
+
+
+4) Enable the services 
+# systemctl enable httpd  --now 
+
+
+5) Chaning the php code 
+
+# cd /var/www/html
+=================== 
+vi index.php 
+<pre>
+<?php
+print_r($_SERVER);
+?>
+ 
+</pre> 
+===================
+
+6) We need to start the service and enable the port 80 
+# firewall-cmd --zone=public --add-port=80/tcp --permanen
+
+To start & enable  the service 
+
+# systemctl restart httpd && systemctl enable httpd
+
+
+
+
+
+
