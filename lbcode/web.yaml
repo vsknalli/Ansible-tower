@@ -1,0 +1,25 @@
+- hosts: web
+  tasks:
+  - name: Install web package 
+    package:
+      name: "httpd"
+      state: present
+
+  - name: Install php package
+    package:
+      name: "php"
+      state: present
+
+
+  - name: Deploy php code
+    copy:
+      src: "index.php"
+      dest: "/var/www/html/index.php"
+
+
+  - name: Restart the service 
+    service:
+      name: "httpd"
+      state: started
+      enabled: yes
+
