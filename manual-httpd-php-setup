@@ -1,4 +1,6 @@
  
+WE NEED TO CONFIGURE THE WEBSERVER:
+===================================
 
 1) we need to install httpd software  ###   90-88 server 
 # yum install httpd -y 
@@ -32,11 +34,284 @@ print_r($_SERVER);
 ===================
 
 6) We need to start the service and enable the port 80 
-# firewall-cmd --zone=public --add-port=80/tcp --permanen
+# firewall-cmd --zone=public --add-port=80/tcp --permanent
+# firewall-cmd --reload
 
 To start & enable  the service 
 
 # systemctl restart httpd && systemctl enable httpd
+
+
+
+LOAD BALANCER CONFIRGURATION 
+=============================
+
+1) We need a software called haproxy 
+# yum install haproxy -y  
+
+2) Every server have own haproxy configuration file 
+# cd /etc/haproy
+# vi haproxy.cfg 
+  1.1) we need to give port 8080 to haproxy server , this is the frontend
+
+  1.2 ) haproxy server needs to know who are all your backend servers and port 80
+
+# vi haproxy.cfg 
+===========================================
+frontend lb
+    bind *:8080
+    timeout client 10s
+    default_backend myweb
+
+
+backend myweb
+    balance roundrobin
+    timeout connect 10s
+    timeout server 10s
+    server  app1 192.168.122.101:80 check
+    server  app2 192.168.122.102:80 check
+    server  app2 192.168.122.103:80 check
+===========================================
+To validate the configuration 
+# haproxy -h 
+# haproxy -f haproxy.cfg -c   ---> To clean 
+
+We need to allow 8080 port in loadbalancer server 
+
+We need to start the service and enable the port 8080
+# firewall-cmd --zone=public --add-port=8080/tcp --permanent
+# firewall-cmd --reload
+
+
+
+
+3) We need to start the service 
+# systemctl enable haproxy --now
+# systemctl status haproxy 
+
+
+
+
+
+==========================================================================================================
+
+		 			LB ANSIBLE AUTOMATED SETUP
+==========================================================================================================
+
+cat inventory
+
+[lb]
+192.168.122.15
+
+
+[web]
+192.168.122.103
+192.168.122.104
+192.168.122.105
+
+what is the difference between copy and templating module ?
+copy --> copy as it is, static copy 
+templating --> copy dynamically , with any value of variables 
+
+vi hello.txt 
+----------------------------------
+hi {{ name }}
+Welcome to Linux automation world
+
+Bye...!!!
+----------------------------------
+----------------------------------
+vi test.yaml
+- hosts: web
+  vars:
+  - name: saba
+  tasks:
+  - template:
+       src: "hello.txt"
+       dest: "/root/hello.txt"
+---------------------------------
+ Here we are asking the play book 
+1) First reat the hello.txt file 
+2) if the file contains any variable , first assign the value for that variable 
+3) and copy to the destination 
+
+
+In this example the hello.txt is called templating file
+here we are using {{ }} symple for variabe , like that we do have mony more symbols in jinja2 
+
+1) we can use conditions also if or else 
+2) we can use for loop also 
+example
+======
+
+if the time is before 12 we can use Good morning or good afternoon 
+suppose if we use multiple names in that name variable, we put the names one by one
+as list and we can use loop here
+
+
+so what is templating language ?
+The premise behind a template language is that the language is "embedded" 
+within some other master document
+
+
+
+Suppose if you want to comment some lines in jinja2 template 
+
+----------------------------------
+hi {{ name }}
+
+{# Welcome to Linux automation world #} 
+
+Bye...!!!
+----------------------------------
+
+--> In the above example commented line won't reflect in the destination
+
+
+
+
+Suppose if i want some coiditions in the template
+
+Again starts with curly braces and end with curly braces
+if the line starts with percentage with in peranthasis , mens we are going to use some specitl feature like contions
+
+
+if you want to close the condition we need to use endif {% endif %} like that 
+
+
+IF THE CONDITION IS TRUE
+
+----------------------------------
+hi {{ name }}
+
+{# Welcome to Linux automation world #} 
+
+{% if 5 == 5 %}
+
+Hi saba  condition is true since i am saying GM to saba
+
+{% else %} 
+
+Hi Ansible since the condition is not true
+
+{% endif %}
+
+Bye...!!!
+
+----------------------------------
+
+
+IF THE CONDITION IS NOT TRUE
+
+
+----------------------------------
+hi {{ name }}
+
+{# Welcome to Linux automation world #} 
+
+{% if 5 == 4 %}
+
+Hi saba  condition is true since i am saying GM to saba
+
+{% else %} 
+
+Hi Ansible since the condition is not true
+
+{% endif %}
+
+Bye...!!!
+
+----------------------------------
+
+
+==========================================================================================================
+
+EXAMPLE = 2
+===========
+
+vi example.2.txt
+Hey Guys..!
+
+We are learning Ansible {{ ansible_version }} This versionis installed on {{ server }}
+
+
+Here the varaiables are {{ ansible_version }} and {{ server }}
+
+Thease are the variables in the playbook and this template module will replace this variables by its value
+
+- hosts: node3
+  vars:
+    ansible_version: "2.14.17"
+    server: "Red Hat Enterprise Linux 9.5 (Plow)"
+  tasks:
+    - name: A Jinja2 example
+      template:
+          src: "example.2.txt"
+          dest: "/root/example2-output"
+
+==============================================================================================================
+
+mkdir /lbcode
+
+vim web.yaml
+- hosts: web
+  tasks:
+  - name: Install web package
+    package:
+        name: "httpd"
+        state: present
+
+  - name: Install php package
+    package:
+        name: "php"
+        state: present
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
