@@ -1,0 +1,16 @@
+- hosts: 192.168.122.103
+  vars:
+    items:
+      - idli
+      - Butter Dosa
+      - Onion DOsa
+      - Rava Dosa
+      - Uppma
+      - ponkal
+      - kesari
+
+  tasks:
+    - name: Jinja2 example 3 
+      template:
+        src: "example3.txt"
+        dest: "/root/example3-output"

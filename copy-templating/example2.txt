@@ -1,0 +1,3 @@
+Hey Guys..!
+
+We are learning Ansible {{ version }} This version is installed on {{ server }}

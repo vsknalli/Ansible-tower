@@ -1,0 +1,7 @@
+- hosts: 192.168.122.103
+  vars:
+  - name: "senthil"
+  tasks:
+  - template:
+        src: "hello.txt"
+        dest: /root/senthil.txt 

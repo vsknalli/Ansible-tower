@@ -1,0 +1,9 @@
+- hosts: 192.168.122.103 
+  vars:
+    version: "2"
+    server: "Red Hat9"
+  tasks:
+    - name: A Jinja2 example
+      template:
+          src: "example2.txt"
+          dest: "/root/example2-output"

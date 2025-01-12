@@ -1,0 +1,15 @@
+hi {{ name }}
+
+{# Welcome to Linux automation world #} 
+
+{% if 5 == 5 %}
+
+Hi saba  condition is true since i am saying GM to saba
+
+{% else %} 
+
+Hi Ansible since the condition is not true
+
+{% endif %}
+
+Bye...!!!

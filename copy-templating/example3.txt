@@ -1,0 +1,9 @@
+
+Today Available items are:
+
+{% for x  in items %}
+
+ {{ x }}
+
+
+{% endfor %}}
