@@ -1,0 +1,5 @@
+- hosts: test
+  tasks:
+  - package:
+       name: "httpd"
+       state: absent 
