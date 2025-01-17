@@ -1,0 +1,29 @@
+- hosts: test
+  tasks:
+  - name: install wep pacakage
+    package:
+      name: "{{ item }}"
+      state: latest 
+    loop:
+      - httpd
+      - php
+  - name: setup the conf file
+    template:
+      src: "my.conf.j2"
+      dest: "/etc/httpd/conf.d/my.conf"
+  - name: Copy the webpage from local
+    copy:
+      src: "index.php"
+      dest: "/var/www/html/index.php"
+  - name: pull the code from Git
+    git:
+      repo: "https://github.com/vsknalli/Ansible-tower.git"
+      dest: "/var/www/html/mygit"
+    ignore_errors: true   
+
+  - name: Service started
+    service:
+      name: "httpd"
+      state: "started"
+      enabled: yes
+
