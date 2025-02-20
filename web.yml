@@ -1,5 +1,5 @@
 - hosts: prod
   tasks: 
   - package: 
-       name: "httpd"
+       name: "dialog"
        state: present
